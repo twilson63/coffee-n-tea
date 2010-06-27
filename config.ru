@@ -14,5 +14,7 @@ require 'app'
 #   :root => "./public",
 #   :nowrap => true
 # }
-
+# require 'rack/offline'
+# 
+# use Rack::Offline
 run Sinatra::Application
