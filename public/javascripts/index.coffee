@@ -17,17 +17,14 @@ Ext.setup {
           cls        : 'twitter-main'
       })
 
-      searchBar.on({
+      searchBar.on {
         search: (query) ->
           if query
-            timeline.store.read({
-              params: {
-                  q: query
-              }
-            })
+            timeline.store.read {
+              params: { q: query }
+            }
 
-            viewport.scroller.scrollTo({x: 0, y: 0});
-              
-      })
+            viewport.scroller.scrollTo {x: 0, y: 0}
+      }
   
 }
